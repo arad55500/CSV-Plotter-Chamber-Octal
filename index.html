@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSV Plotter</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-zoom@1.0.0"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="left">
+      <h1>CSV Plotter V1.1 | Created by Arad Okanin</h1>
+      <div class="controls">
+        <input type="file" id="fileInput" class="file-input">
+        <button id="saveButton" class="save-button" disabled>Save as JPEG</button>
+        <button id="exportButton" class="export-button" disabled>Export to Excel</button>
+      </div>
+      <div class="canvas-container">
+        <canvas id="chartCanvas"></canvas>
+      </div>
+    </div>
+    <div class="right" id="dataSection">
+      <div class="data-header">
+        <h2>Data</h2>
+        <button id="toggleButton" class="toggle-button">Hide Data</button>
+      </div>
+      <div class="table-container">
+        <table id="dataTable">
+          <thead>
+            <tr>
+              <th>Time [m]</th>
+              <th>Temp1</th>
+              <th>Temp3</th>
+              <th>Chamber Temperature</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <button id="viewButton" class="view-button hidden">View Data</button>
+  <script src="renderer.js"></script>
+</body>
+</html>

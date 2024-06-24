@@ -1,0 +1,20 @@
+{
+  "name": "electron-csv-plotter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "package": "electron-packager . electron-csv-plotter --platform=win32 --arch=x64 --out=dist --overwrite"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chart.js": "^4.4.3",
+    "csv-parser": "^3.0.0",
+    "electron": "^31.0.2",
+    "exceljs": "^4.4.0"
+  }
+}
